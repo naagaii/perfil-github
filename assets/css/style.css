@@ -35,6 +35,7 @@
 
   .secao{
     padding-left:30px;
+    padding-top: 30px;
   }
 
   #perfil{
@@ -61,38 +62,35 @@
     
   }
 
-  #repositorios {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap; /* Permite que os itens sejam enrolados em várias linhas */
-    gap: 20px; /* Espaçamento entre os grid cards */
+  
+.repositorios {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    grid-gap: 20px; 
 }
 
 .card {
-    flex: 1 0 300px; /* Cada grid card terá uma largura mínima de 300px e se expandirá conforme necessário */
-    max-width: 400px; /* Largura máxima de cada grid card */
-    background-color: #f0f0f0;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin-bottom: 20px;
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    overflow: hidden; 
 }
 
-  
+.card-body {
+    padding: 20px; 
+}
 
-  
-  
+.card-title {
+    font-size: 1.2em; 
+    margin-bottom: 10px; 
+    background-color: rgb(187, 180, 180);
+}
 
-  @media screen and (max-width: 600px) {
+.card-text {
+    color: #666; 
+}
 
+.card_icon {
+    margin-top: 10px; 
     
-    .container {
-        padding: 10px;
-    }
 }
 
-@media screen and (max-width: 768px) {
-    #repositorios {
-        flex-direction: column; /* Em telas menores, os grid cards serão exibidos em uma coluna */
-    }
-}
