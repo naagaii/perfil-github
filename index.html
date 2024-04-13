@@ -4,53 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil Github</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header id="cabecalho">
         <h1 id="nome">Francielle Limonge</h1>
         <nav id="menu">
-            <a>Seção 1</a>
-            <a>Seção 2</a>
-            <a>Seção 3</a>
+            <a><strong>Seção 1  </strong></a>
+            <a><strong>Seção 2  </strong></a>
+            <a><strong>Seção 3  </strong></a>
 
         </nav>
     </header>
 
-    <section id="perfil">
-        <h2>Perfil</h2>
-        <hr>
-        <p class="nomecompleto">Francielle Moura Limonge</p>
-        <p class="descricao">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam, dicta!</p>
-        <p class="localidade"><strong>Location:</strong>Belo Horizonte, MG, Brazil.</p>
-        <p class="site"><strong>Site:</strong></p>
-        <img src="">
+    <section>
+      <h2 class="secao">Perfil</h2>
+      <hr>
+      <div id="perfil">
+        <img id="imagem_perfil" src="assets/img/perfil.jpg" alt="imagem perfil">
+          <div>
+            <p class="informacoes_perfil"><strong>Francielle Moura Limonge</strong></p>
+            <p class="informacoes_perfil">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam, dicta!</p>
+            <p class="informacoes_perfil"><strong>Location:</strong>Belo Horizonte, MG, Brazil.</p>
+            <p class="informacoes_perfil"><strong>Site:</strong></p>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+          </div>
+          <div id="icone">
+        <i class="fa-regular fa-user"> 193</i>
+         </div>
+      </div>
 
     </section>
-    <section id="repositorios">
-        <h2>Repositórios (3)</h2>
+    <section>
+        <h2 class="secao">Repositórios (3)</h2>
         <hr>
         <div class="row row-cols-1 row-cols-md-2 g-4">
             <div class="col">
               <div class="card">
-                <img src="..." class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
                   <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 </div>
               </div>
             </div>
-            <div class="col">
-              <div class="card">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                </div>
-              </div>
+            
             </div>
             <div class="col">
               <div class="card">
-                <img src="..." class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
                   <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
@@ -59,7 +62,6 @@
             </div>
             <div class="col">
               <div class="card">
-                <img src="..." class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
                   <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -69,7 +71,7 @@
           </div>
     </section>
     <section id="conteudosugerido">
-        <h2>Conteúdo Sugerido</h2>
+        <h2 class="secao">Conteúdo Sugerido</h2>
         <hr>
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
@@ -110,10 +112,15 @@
             </button>
           </div>
     </section>
-    <section id="colegas">
-        <h2>Colegas de Trabalho</h2>
+    <section>
+        <h2 class="secao">Colegas de Trabalho</h2>
         <hr>
-
+      <div id="colegas">
+        <img src="" alt="imagem colega1">
+        <img src="" alt="imagem colega2">
+        <img src="" alt="imagem colega3">
+        <img src="" alt="imagem colega4">
+      </div>
     </section>
 </body>
 

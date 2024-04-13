@@ -1,16 +1,98 @@
-$card-spacer-y:                     $spacer;
-$card-spacer-x:                     $spacer;
-$card-title-spacer-y:               $spacer * .5;
-$card-border-width:                 $border-width;
-$card-border-radius:                $border-radius;
-$card-border-color:                 rgba($black, .125);
-$card-inner-border-radius:          subtract($card-border-radius, $card-border-width);
-$card-cap-padding-y:                $card-spacer-y * .5;
-$card-cap-padding-x:                $card-spacer-x;
-$card-cap-bg:                       rgba($black, .03);
-$card-cap-color:                    null;
-$card-height:                       null;
-$card-color:                        null;
-$card-bg:                           $white;
-$card-img-overlay-padding:          $spacer;
-$card-group-margin:                 $grid-gutter-width * .5;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+  }
+
+    #cabecalho { 
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 50px;
+  }
+
+  #nome {
+    color: black;
+    background-color: rgb(187, 180, 180);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    padding: 20px;
+  }
+  
+  #menu {
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    padding:20px;
+    
+   
+  }
+
+  #menu a{
+    margin-right: 25px; 
+  }
+
+  .secao{
+    padding-left:30px;
+  }
+
+  #perfil{
+    display:flex;
+    align-items: center;
+  }
+
+  #imagem_perfil{
+    width: 300px;
+    height: auto;
+    padding: 30px;
+    
+    
+  }
+
+  .informacoes_perfil{
+    margin: 15px 0;
+    display: flex;
+
+  }
+
+  #icone {
+    
+    
+  }
+
+  #repositorios {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Permite que os itens sejam enrolados em várias linhas */
+    gap: 20px; /* Espaçamento entre os grid cards */
+}
+
+.card {
+    flex: 1 0 300px; /* Cada grid card terá uma largura mínima de 300px e se expandirá conforme necessário */
+    max-width: 400px; /* Largura máxima de cada grid card */
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+  
+
+  
+  
+
+  @media screen and (max-width: 600px) {
+
+    
+    .container {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #repositorios {
+        flex-direction: column; /* Em telas menores, os grid cards serão exibidos em uma coluna */
+    }
+}
