@@ -8,20 +8,24 @@
     display:flex;
     justify-content: space-between;
     align-items: center;
-    background-color: white;
+    background-color: #fafafa;
     padding: 30px;
   }
 
+  .secoes{ 
+    background-color: #e8f1f5;
+  }
+
   #nome {
-    color: black;
-    background-color: rgb(187, 180, 180);
+    color: #005691;
+    background-color: #e8f1f5;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 30px;
     padding: 20px;
   }
   
   #menu {
-    color: black;
+    color: #005691;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 25px;
     padding:20px;
@@ -35,7 +39,9 @@
 
   .secao{
     padding-left:30px;
-    padding-top: 30px;
+    padding-top: 20px;
+    font-size: 30px;
+    font-family: sans-serif;
   }
 
   #perfil{
@@ -44,7 +50,7 @@
   }
 
   #imagem_perfil{
-    width: 300px;
+    max-width: 300px;
     height: auto;
     padding: 30px;
     
@@ -54,10 +60,11 @@
   .informacoes_perfil{
     margin: 15px 0;
     display: flex;
+    width: 50%;
 
   }
 
-  #icone {
+  #icones2 {
     
     
   }
@@ -77,12 +84,14 @@
 
 .card-body {
     padding: 20px; 
+    background-color: #fafafa;
 }
 
 .card-title {
     font-size: 1.2em; 
     margin-bottom: 10px; 
-    background-color: rgb(187, 180, 180);
+    background-color: #005691;
+    color:#fafafa;
 }
 
 .card-text {
@@ -114,7 +123,36 @@
   #rodape{
     text-align: center;
     padding: 25px;
+    background-color: #e8f1f5;
+    position: absolute;
+    bottom: 0;
     
   }
+
+  @media screen and (max-width: 600px) {
+    #perfil{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; /* Centraliza o conteúdo verticalmente */
+        text-align: center; /* Centraliza o conteúdo horizontalmente */
+    
+    }
+    #imagem_perfil {
+        padding: 20px;
+        max-width: 200px;
+        height: auto;
+    }
+
+    #informacoes_perfil {
+        margin: 10px 0; /* Reduz a margem superior e inferior das informações */
+        display:flex;
+        align-items: center;
+        justify-content: center; /* Centraliza o conteúdo verticalmente */
+        text-align: center; /* Centraliza o conteúdo horizontalmente */
+        flex-direction: column;
+    }
+
+}
 
   

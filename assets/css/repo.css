@@ -8,20 +8,24 @@
     display:flex;
     justify-content: space-between;
     align-items: center;
-    background-color: white;
+    background-color: #fafafa;
     padding: 30px;
   }
 
+  .secoes{ 
+    background-color: #e8f1f5;
+  }
+
   #nome {
-    color: black;
-    background-color: rgb(187, 180, 180);
+    color: #005691;
+    background-color: #e8f1f5;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 30px;
     padding: 20px;
   }
   
   #menu {
-    color: black;
+    color: #005691;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 25px;
     padding:20px;
@@ -35,7 +39,9 @@
 
   .secao{
     padding-left:30px;
-    padding-top: 30px;
+    padding-top: 20px;
+    font-size: 30px;
+   
   }
 
   #informacoes{
@@ -55,7 +61,6 @@
   }
 
   .icon {
-    position: absolute;
     top: 65%;
     right: 0;
     transform: translate(0, -50%);
@@ -69,16 +74,20 @@
     margin-bottom: 20px;
   }
 
-  .topicos{
-
-  }
-
-  .item{
-    background-color: aqua;
+  .botao{
+    background-color: #004a7c;
+    padding: 8px;
+    border-radius:15px;
+    margin-left: 50px;
+    margin-top: 8px;
+    color: #fafafa;
   }
 
   #rodape{
     text-align: center;
     padding: 25px;
+    background-color: #e8f1f5;
+    position: absolute;
+    bottom: 0;
     
   }
