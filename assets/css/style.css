@@ -120,11 +120,18 @@
     margin-top: 5px;
   }
 
+  .descricaoslide{
+    display: flex;
+    justify-content:center ;
+    font-size: 15px;
+    background-color: #005691;
+    color:#fafafa;
+  }
+
   #rodape{
     text-align: center;
     padding: 25px;
     background-color: #e8f1f5;
-    position: absolute;
     bottom: 0;
     
   }
