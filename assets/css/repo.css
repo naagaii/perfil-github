@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+  }
+
+    #cabecalho { 
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 30px;
+  }
+
+  #nome {
+    color: black;
+    background-color: rgb(187, 180, 180);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    padding: 20px;
+  }
+  
+  #menu {
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    padding:20px;
+    
+   
+  }
+
+  #menu a{
+    margin-right: 25px; 
+  }
+
+  .secao{
+    padding-left:30px;
+    padding-top: 30px;
+  }
+
+  #informacoes{
+    padding:30px;
+    
+  }
+
+  .subtitulo{
+    color:blue;
+    padding-left: 50px;
+    padding-bottom: 10px;
+  }
+
+  .texto{
+    padding-left: 50px;
+    padding-bottom: 10px;
+  }
+
+  .card_icon{
+    float:right;
+    
+  }
+
+  #rodape{
+    text-align: center;
+    padding: 25px;
+    
+  }
