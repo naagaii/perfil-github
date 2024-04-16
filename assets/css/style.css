@@ -38,7 +38,13 @@
 
   #menu a{
     margin-right: 25px; 
+    text-decoration: none;
+    color: #005691;
   }
+
+  #menu a:hover {
+    color: #02070c;
+}
 
   .secao{
     padding-left:30px;
