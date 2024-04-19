@@ -4,6 +4,10 @@
     box-sizing: border-box; 
   }
 
+  html{
+    width: 100%;
+  }
+  
     #cabecalho { 
     display:flex;
     justify-content: space-between;
